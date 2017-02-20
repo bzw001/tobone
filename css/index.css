@@ -1,0 +1,475 @@
+/*����*/
+.layout {
+  width: 100%;
+  background-color: #ffffff;
+}
+/*������Ϣ*/
+header {
+  position: relative;
+}
+header > canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+header > h1 {
+  width: 100%;
+  padding: 30px 0;
+  text-align: center;
+  background-color: #ffffff;
+}
+header > .infoBar {
+  position: relative;
+  background-color: #74695f;
+}
+header > .infoBar > ul {
+  width: 80%;
+  padding-left: 3%;
+}
+header > .infoBar > ul > .active {
+  background-color: #e88c6d;
+}
+header > .infoBar > ul > li {
+  position: relative;
+  width: 14.3%;
+  float: left;
+  height: 60px;
+  line-height: 60px;
+  font-size: 20px;
+  text-align: center;
+}
+header > .infoBar > ul > li > a {
+  display: block;
+  height: 60px;
+  font-size: 20px;
+  color: #f5fefc;
+  letter-spacing: 2px;
+}
+header > .infoBar .front-end,
+header > .infoBar .back-end {
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.8s;
+}
+header > .infoBar .front-end > li,
+header > .infoBar .back-end > li {
+  width: 100%;
+  background-color: #e88c6d;
+}
+header > .infoBar .front-end > li:hover,
+header > .infoBar .back-end > li:hover {
+  background-color: #878787;
+}
+header > .infoBar .front-end > li > a,
+header > .infoBar .back-end > li > a {
+  color: #ffffff;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+header > .infoBar > .search {
+  position: absolute;
+  width: 20%;
+  padding-right: 3%;
+  right: 0;
+  top: 0;
+  text-align: right;
+}
+header > .infoBar > .search > a:hover {
+  color: #ff0814;
+}
+header > .infoBar > .search > a {
+  display: inline-block;
+  height: 60px;
+  line-height: 60px;
+  color: #e88c6d;
+  font-size: 20px;
+}
+header > .infoBar > .search > a > i {
+  font-size: 24px;
+}
+/*�в�*/
+.head,
+.middle {
+  width: 94%;
+  margin: 0 auto;
+}
+/*�в��ֲ�*/
+.carousel {
+  position: relative;
+  margin-top: 10px;
+  /*������˸*/
+  /*����*/
+}
+.carousel .indicator {
+  padding: 10px 0;
+  background-color: #f6efdd;
+  width: 10%;
+  float: left;
+}
+.carousel .indicator > ul {
+  height: 280px;
+}
+.carousel .indicator > ul > li {
+  float: left;
+  width: 100%;
+  height: 25%;
+}
+.carousel .indicator > ul > li > a {
+  display: block;
+  height: 100%;
+}
+.carousel .indicator > ul > li > a > img {
+  display: block;
+  width: 100%;
+  border: 2px solid #f2f2f2;
+  height: 100%;
+}
+.carousel .indicator > ul > li > a > .active {
+  border: 3px solid #c2bac7;
+}
+.carousel .indicator ul > li:first-of-type {
+  margin-top: 0;
+}
+.carousel > .imgBox {
+  overflow: hidden;
+  float: left;
+  width: 60%;
+  height: 300px;
+  padding: 10px 0;
+  background-color: #f6efdd;
+  margin-left: 0.5%;
+}
+.carousel > .imgBox > ul {
+  height: 280px;
+  float: left;
+}
+.carousel > .imgBox > ul > li {
+  height: 100%;
+  float: left;
+}
+.carousel > .imgBox > ul > li > a {
+  display: block;
+  width: 100%;
+}
+.carousel > .imgBox > ul > li > a > img {
+  display: block;
+  width: 100%;
+  height: 280px;
+}
+.carousel > .blinkText {
+  position: absolute;
+  bottom: 10px;
+  width: 60%;
+  margin-left: 10.5%;
+  height: 40px;
+  text-align: center;
+  background-color: rgba(82, 82, 82, 0.2);
+}
+.carousel > .blinkText > section {
+  width: 100%;
+}
+.carousel > .blinkText > section > .slideshow {
+  width: 100%;
+}
+.carousel > .blinkText > section > div > div {
+  width: 100%;
+}
+.carousel > .blinkText > section > div > div > h2 {
+  margin: 0 auto;
+}
+.carousel > .epigram {
+  position: relative;
+  float: right;
+  width: 28%;
+  height: 300px;
+  background-color: #f6efdd;
+}
+.carousel > .epigram > i {
+  position: absolute;
+  top: -10px;
+  left: -7px;
+  font-size: 34px;
+  color: #b3b3b3;
+}
+.carousel > .epigram > img {
+  display: block;
+  border-radius: 5px;
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 90%;
+  height: 260px;
+}
+.carousel > .epigram > p {
+  font-size: 14px;
+  color: #fff;
+  margin: 0 5%;
+  position: absolute;
+  bottom: 30px;
+  background-color: rgba(205, 205, 205, 0.47);
+}
+.carousel > .epigram > p > span {
+  display: block;
+  padding-right: 20px;
+  text-align: right;
+}
+/*����*/
+.hotAticle {
+  width: 70.5%;
+  margin-top: 20px;
+  float: left;
+  /*���²���*/
+}
+.hotAticle > .hot {
+  padding: 0 40px;
+  background-color: #f6efdd;
+  padding-bottom: 20px;
+}
+.hotAticle > .hot > h2 {
+  padding: 20px 0;
+  border-bottom: 1px solid #5957ff;
+}
+.hotAticle > .hot > h2 > i {
+  font-size: 22px;
+}
+.hotAticle > .hot > ul {
+  margin-top: 20px;
+}
+.hotAticle > .hot > ul > li:nth-of-type(2) > span:first-of-type {
+  background: #42ffa0;
+}
+.hotAticle > .hot > ul > li:nth-of-type(3) > span:first-of-type {
+  background: #66a6ff;
+}
+.hotAticle > .hot > ul > li:nth-of-type(4) > span:first-of-type {
+  background: #d935ff;
+}
+.hotAticle > .hot > ul > li:nth-of-type(5) > span:first-of-type {
+  background: #ccff48;
+}
+.hotAticle > .hot > ul > li {
+  margin-bottom: 20px;
+}
+.hotAticle > .hot > ul > li > span:first-of-type {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  background: #ff684f;
+  text-align: center;
+}
+.hotAticle > .hot > ul > li > a:first-of-type {
+  display: inline-block;
+  margin-left: 20px;
+  font-size: 14px;
+  height: 24px;
+  line-height: 24px;
+}
+.hotAticle > .hot > ul > li > span:last-of-type {
+  float: right;
+}
+.hotAticle > .hot > ul > li > a:last-of-type {
+  float: right;
+}
+.hotAticle .article > .text-container {
+  width: 100%;
+  height: 100%;
+  background-color: #ccc;
+  position: absolute;
+  top: 0;
+}
+.hotAticle .article > .text-container > .hide {
+  display: none;
+}
+.hotAticle .article > article {
+  position: relative;
+  padding: 0 40px 30px 40px;
+  background-color: #f6efdd;
+  margin-top: 20px;
+}
+.hotAticle .article > article > .context {
+  padding: 0 10px;
+  height: 0;
+  transition: height 0.5s;
+  overflow: hidden;
+}
+.hotAticle .article > article > .context > p {
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  padding: 0 10px 20px 10px;
+}
+.hotAticle .article > article > p {
+  font-size: 20px;
+  color: #6b6b6b;
+}
+.hotAticle .article > article > a:first-of-type {
+  display: block;
+  padding: 20px 0;
+}
+.hotAticle .article > article > a:first-of-type > span {
+  float: left;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: #8787ff;
+}
+.hotAticle .article > article > a:first-of-type > h2 {
+  margin-left: 80px;
+  line-height: 60px;
+  font-size: 30px;
+}
+.hotAticle .article > article > a:nth-of-type(2) > img {
+  float: left;
+  width: 30%;
+  margin-right: 20px;
+}
+.hotAticle .article > article > .article-info {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+}
+.hotAticle .article > article > .article-info > span {
+  margin-right: 10px;
+}
+.categories {
+  width: 29.5%;
+  margin-top: 20px;
+  padding-left: 20px;
+  float: right;
+  /*���������*/
+}
+.categories > .bookcase {
+  background-color: #f6efdd;
+  padding: 0 20px;
+}
+.categories > .bookcase > h2 {
+  padding: 20px 0;
+  border-bottom: 1px solid #5957ff;
+}
+.categories > .bookcase > h2 > i {
+  font-size: 20px;
+}
+.categories > .bookcase > ul {
+  padding: 20px 0;
+}
+.categories > .bookcase > ul > li:nth-of-type(1) > a:first-of-type {
+  background-color: rgba(98, 111, 255, 0.68);
+}
+.categories > .bookcase > ul > li:nth-of-type(1) > a:last-of-type {
+  background-color: rgba(255, 224, 177, 0.68);
+}
+.categories > .bookcase > ul > li:nth-of-type(2) > a:first-of-type {
+  background-color: rgba(68, 255, 39, 0.77);
+}
+.categories > .bookcase > ul > li:nth-of-type(2) > a:last-of-type {
+  background-color: rgba(199, 255, 45, 0.67);
+}
+.categories > .bookcase > ul > li:nth-of-type(3) > a:first-of-type {
+  background-color: rgba(66, 179, 255, 0.73);
+}
+.categories > .bookcase > ul > li:nth-of-type(3) > a:last-of-type {
+  background-color: #ff56c5;
+}
+.categories > .bookcase > ul > li:nth-of-type(4) > a:first-of-type {
+  background-color: #2d2eff;
+}
+.categories > .bookcase > ul > li:nth-of-type(4) > a:last-of-type {
+  background-color: rgba(255, 62, 51, 0.66);
+}
+.categories > .bookcase > ul > li:nth-of-type(5) > a:first-of-type {
+  background-color: rgba(205, 255, 228, 0.71);
+}
+.categories > .bookcase > ul > li:nth-of-type(5) > a:last-of-type {
+  background-color: rgba(255, 219, 81, 0.76);
+}
+.categories > .bookcase > ul > li:nth-of-type(6) > a:first-of-type {
+  background-color: rgba(255, 254, 17, 0.72);
+}
+.categories > .bookcase > ul > li:nth-of-type(6) > a:last-of-type {
+  background-color: rgba(255, 153, 23, 0.69);
+}
+.categories > .bookcase > ul > li {
+  text-align: center;
+}
+.categories > .bookcase > ul > li > a {
+  color: #710200;
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  width: 45%;
+  margin: 5px;
+  font-size: 14px;
+}
+.categories > .past {
+  margin-top: 20px;
+  background-color: #f6efdd;
+  padding: 0 20px;
+}
+.categories > .past > h2 {
+  padding: 20px 0;
+  border-bottom: 1px solid #28caff;
+}
+.categories > .past > h2 > i {
+  font-size: 20px;
+}
+.categories > .past > ul {
+  padding: 20px 0;
+}
+.categories > .past > ul > li > a {
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  width: 80%;
+  margin: 5px;
+  font-size: 14px;
+}
+.categories > .past > ul > li > a > i {
+  font-size: 12px;
+}
+.categories > .randomInfo {
+  background-color: #f6efdd;
+  margin-top: 20px;
+  padding: 40px;
+}
+.categories > .randomInfo > p {
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+}
+.categories > .randomInfo > a {
+  margin: 0 auto;
+  display: block;
+  padding-top: 20px;
+  width: 60%;
+  font-size: 12px;
+  border-radius: 50%;
+  background-color: rgba(255, 0, 0, 0.58);
+  color: #fff;
+  border: 2px solid #fff;
+  overflow: hidden;
+}
+.categories > .randomInfo > a > span {
+  display: block;
+  text-align: center;
+  height: 40px;
+}
+/*�ײ���Ȩ��Ϣ*/
+.bottom {
+  height: 40px;
+  margin-top: 60px;
+  background-color: #74695f;
+}
+.bottom > p {
+  color: #fff;
+  font-size: 16px;
+  line-height: 40px;
+  text-align: center;
+}
+.bottom > p > span {
+  margin-right: 20px;
+}
