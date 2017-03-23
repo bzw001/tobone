@@ -1,0 +1,91 @@
+/*布局*/
+.layout {
+  width: 80%;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+.container-fluid {
+  background: url("../images/black_bg.jpg") center center;
+}
+/*个人信息*/
+.info {
+  color: #fff;
+}
+.info > .me {
+  text-align: center;
+}
+.info > .me > p {
+  text-align: center;
+}
+.info > .me > img {
+  display: inline-block;
+  border-radius: 50%;
+}
+.introduce {
+  float: left;
+}
+.introduce > p {
+  text-align: center;
+  color: #fff;
+}
+.projects > div > ul > li {
+  float: left;
+  text-align: center;
+}
+.projects > div > ul > li > img {
+  width: 100%;
+  display: block;
+  height: 300px;
+  box-shadow: 1px 1px 10px #fff;
+}
+.projects > div > ul > li > span {
+  display: block;
+  height: 30px;
+  line-height: 26px;
+}
+.projects > div > img {
+  display: inline-block;
+}
+.projects > .show {
+  margin: 0 auto;
+}
+.projects > .show > li:hover {
+  background-color: #aeaeae;
+}
+.projects > .show > li {
+  height: 40px;
+  line-height: 40px;
+  padding: 0 20px;
+  margin-bottom: 20px ;
+  border-radius: 4px;
+}
+.projects > .show > li > a {
+  font-size: 14px;
+}
+.projects > ul > li {
+  float: left;
+  padding: 0 5px;
+  height: 20px;
+  line-height: 20px;
+}
+.projects > ul > li > a {
+  color: #fff;
+}
+.contactMe {
+  margin-top: 200px;
+  margin-bottom: 100px;
+}
+.contactMe > p {
+  text-align: center;
+  margin: 0 auto;
+}
+.contactMe > p > span {
+  display: block;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+}
+.contactMe > p > a {
+  display: block;
+  width: 100%;
+}

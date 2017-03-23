@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>ToBeOne</title>
+    <link rel="stylesheet" href="./css/base.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="font/iconfont.css"/>
+    <link rel="stylesheet" href="css/blinkText.css"/>
+    <!--<script src="./js/blinkText/charming.min.js"></script>-->
+    <!--<script src="./js/blinkText/anime.min.js"></script>-->
+    <!--<script src="./js/blinkText/textfx.js"></script>-->
+    <!--<script src="./js/home-index.js"></script>-->
+</head>
+<body>
+<div class="layout">
+    <!--顶部信息-->
+    <header>
+        <!--画布需要优化大小与其他-->
+        <canvas></canvas>
+        <h1>Mr wang 的个人博客</h1>
+        <div class="infoBar clearfix">
+                <ul class="clearfix">
+                    <li class="active"><a href="">首页</a></li>
+                    <li><a href="javascript:void(0)">Font-end</a>
+                        <ul class="front-end">
+                            <li><a href="./pages/sort-index.html">HTML</a></li>
+                            <li><a href="./pages/sort-index.html">CSS</a></li>
+                            <li><a href="./pages/sort-index.html">JS</a></li>
+                            <li><a href="./pages/sort-index.html">移动web</a></li>
+                            <li><a href="./pages/sort-index.html">Angular</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0)">Back-end</a>
+                        <ul class="back-end">
+                            <li><a href="./pages/sort-index.html">C++</a></li>
+                            <li><a href="./pages/sort-index.html">Python</a></li>
+                            <li><a href="./pages/sort-index.html">Linux</a></li>
+                            <li><a href="./pages/sort-index.html">数据库</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./pages/sort-index.html">生活Info</a></li>
+                    <li><a href="./aboutMe">About Me</a></li>
+                    <li><a href="./pages/leaveMessage-index.html">给我留言</a></li>
+                </ul>
+
+            <div class="search"><a href="./pages/search-index.html"><i class=" iconfont icon-weibiaoti4 m_r5"></i>搜索</a></div>
+        </div>
+    </header>
+    <div class="head clearfix">
+    <!--头部轮播图-->
+    <div class="carousel clearfix" id="carousel">
+        <!--先使用具体标签，后使用模板引擎-->
+        <div class="indicator">
+            <ul class="clearfix">
+                <li><a href="javascript:void(0)"><img class="active" src="./images/4.jpg" alt=""/></a></li>
+                <li><a href="javascript:void(0)"><img src="./images/1.jpg" alt=""/></a></li>
+                <li><a href="javascript:void(0)"><img src="./images/2.jpg" alt=""/></a></li>
+                <li><a href="javascript:void(0)"><img src="./images/3.jpg" alt=""/></a></li>
+            </ul>
+        </div>
+        <div class="imgBox clearfix">
+             <ul class="">
+                 <li><a href="javascript:void(0)"><img src="./images/4.jpg" alt=""/></a></li>
+                 <li><a href="javascript:void(0)"><img src="./images/1.jpg" alt=""/></a></li>
+                 <li><a href="javascript:void(0)"><img src="./images/2.jpg" alt=""/></a></li>
+                 <li><a href="javascript:void(0)"><img src="./images/3.jpg" alt=""/></a></li>
+                 <li><a href="javascript:void(0)"><img src="./images/4.jpg" alt=""/></a></li>
+             </ul>
+        </div>
+        <!--字体闪烁-->
+        <div class="blinkText">
+            <section class="content content--c2 clearfix" id="section2" >
+                <div class="slideshow slideshow--2" data-effect="fx3">
+                    <div class="slide slide--current"><h2 class="title title--style-2 title--centered">CSS中可以通过哪些属性定义</h2></div>
+                    <div class="slide"><h2 class="title title--style-2 title--centered">rgba()和opacity的透明效果有什么不同</h2></div>
+                    <div class="slide"><h2 class="title title--style-2 title--centered">如何垂直居中一个浮动元素？</h2></div>
+                    <div class="slide"><h2 class="title title--style-2 title--centered">Sass、LESS是什么</h2></div>
+                </div>
+        </div>
+        <!--警句-->
+        <div class="epigram">
+            <i class=" iconfont icon-changyonglianjie"></i>
+            <img src="./images/epigram04.jpg" alt=""/>
+            <p>读书使人明智，读诗使人灵秀，演算使人精密，哲理使人深刻，伦理使人有修养，逻辑修辞使人善辩<span>---培根</span></p>
+        </div>
+    </div>
+    </div>
+    <div class="sort-article">
+
+    </div>
+    <!--中部具体信息-->
+    <div class="middle clearfix">
+        <!--热门文章与具体文章-->
+        <div class="hotAticle">
+            <div class="hot">
+                <h2><i class=" iconfont icon-207 m_r5"></i>热门文章</h2>
+                <ul id="hotTitle">
+                    <!--<li><span>1</span><a href="">什么是CssHack？ie6,7,8的hack分别是什么</a><a href=""><span>+</span>喜欢</a><span>评论数(30)</span></li>-->
+                    <script type="text/template" id="hotTitle-T">
+                     <% for(var i=0;i < items.length;i++){%>
+                     <li><span><%=i+1%></span><a href="./pages/every.html" data-id="<%=items[i].id%>"><%=items[i].title%></a><a href="javascript:void(0)" class="m_l10 "><i class=" iconfont icon-aixin m_r5"></i>喜欢</a><span>评论数(30)</span></li>
+                     <%}%>
+</script>
+                </ul>
+            </div>
+            <div class="article" style="position: relative;">
+                <div class="loading">
+                    <img src="images/loading.gif" alt=""/>
+                </div>
+                <article class="clearfix"></article>
+                <article class="clearfix"></article>
+                <article class="clearfix"></article>
+                <article class="clearfix"></article>
+                <article class="clearfix"></article>
+                <article class="clearfix"></article>
+                <article class="clearfix"></article>
+                <article class="clearfix"></article>
+                    <!--模板-->
+                    <script type="text/template" id="article-temp">
+                        <a href="./pages/every.html" ><span><%=item.type%></span><h2 class="h2_title" data-id="<%=item.id%>"><%=item.title%></h2></a>
+                        <div class="context conceal" >
+                            <p></p>
+                        </div>
+                        <a href=""><img src="<%=item.imgSrc%>" alt=""/></a>
+                        <p><%=item.abstract%></p>
+                        <p class="article-info">
+                            <span>author:<%=item.author%></span>
+                            <span>date:<%=item.data%></span>
+                            <span><%=item.number%>浏览</span>
+                        </p>
+</script>
+                <!--<article class="clearfix">-->
+                    <!--<a href=""><span>HTML</span><h2>行内元素和块级元素的具体区别是什么？</h2></a>-->
+                    <!--<a href=""><img src="./images/article_1.jpg" alt=""/></a>-->
+                    <!--<p>总是独占一行，表现为另起一行开始，而且其后的元素也必须另起一行显示;-->
+                        <!--宽度(width)、高度(height)、内边距(padding)和外边距(margin)都可控制;-->
+                        <!--内联元素(inline)特性：和相邻的内联元素在同一行;-->
+                        <!--宽度(width)、高度(height)、内边距的 top/bottom(padding-top/padding-bottom)和外边-->
+                        <!--距的 top/bottom(margin-top/margin-bottom)都不可改变（也就是 padding 和 margin 的-->
+                        <!--left 和 right 是可以设置的），就是里面文字或图片的大小...</p>-->
+                    <!--<p class="article-info">-->
+                        <!--<span>author:Mr wang</span>-->
+                        <!--<span>date:一周前</span>-->
+                        <!--<span>13浏览</span>-->
+                    <!--</p>-->
+                <!--</article>-->
+            </div>
+        </div>
+        <!--分类信息-->
+        <div class="categories">
+            <div class="bookcase">
+                <h2><i class=" iconfont icon-weibiaoti212 m_r5"></i>老王的书柜</h2>
+                <ul>
+                    <li><a href="">HTML(5)</a><a href="">CSS(6)</a></li>
+                    <li><a href="">Javascript(2)</a><a href="">Ajax(2)</a></li>
+                    <li><a href="">移动web(3)</a><a href="">前端框架(8)</a></li>
+                    <li><a href="">Linux(3)</a><a href="">C(10)</a></li>
+                    <li><a href="">C++(5)</a><a href="">Python(20)</a></li>
+                    <li><a href="">数据库(10)</a><a href="">硬件与智能(4)</a></li>
+                </ul>
+            </div>
+            <div class="past">
+                <h2><i class=" iconfont icon-weibiaoti5 m_r5"></i>越醇越香</h2>
+                <ul>
+                    <li><a href=""><i class=" iconfont icon-biaotizhongdian m_r5"></i>January 2016</a><a href=""><i class=" iconfont icon-biaotizhongdian m_r5"></i>February 2016</a></li>
+                    <li><a href=""><i class=" iconfont icon-biaotizhongdian m_r5"></i>March 2016</a><a href=""><i class=" iconfont icon-biaotizhongdian m_r5"></i>April 2016</a></li>
+                    <li><a href=""><i class=" iconfont icon-biaotizhongdian m_r5"></i>May 2016</a><a href=""><i class=" iconfont icon-biaotizhongdian m_r5"></i>June 2016</a></li>
+                    <li><a href=""><i class=" iconfont icon-biaotizhongdian m_r5"></i>July 2016</a><a href=""><i class=" iconfont icon-biaotizhongdian m_r5"></i>August 2016</a></li>
+                    <li><a href=""><i class=" iconfont icon-biaotizhongdian m_r5"></i>September 2016</a><a href=""><i class=" iconfont icon-biaotizhongdian m_r5"></i>October 2016</a></li>
+                    <li><a href=""><i class=" iconfont icon-biaotizhongdian m_r5"></i>November 2016</a><a href=""><i class=" iconfont icon-biaotizhongdian m_r5"></i>December 2016</a></li>
+                </ul>
+            </div>
+            <!--随机小知识-->
+            <div class="randomInfo">
+                <p><a href="javascript:void(0)"><span>变一下</span><i class=" iconfont icon-shuaxin m_l5"></i></a></p>
+                <a href="javascript:void(0)">
+                    <span class="hidden">简介盒子模型</span>
+                    <span class="show">CSS中link和@import的区别</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <p><span>Mr wang 版权所有</span><span>构建 © 2016</span></p>
+    </div>
+</div>
+<script src="js/lib/require.js" data-main="./js/index/home-main"></script>
+</body>
+</html>

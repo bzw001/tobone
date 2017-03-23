@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>ToBeOne</title>
+    <link rel="stylesheet" href="../css/base.css"/>
+    <link rel="stylesheet" href="../css/index.css"/>
+    <link rel="stylesheet" href="../font/iconfont.css"/>
+    <link rel="stylesheet" href="../css/blinkText.css"/>
+</head>
+<body>
+<div class="layout">
+    <!--顶部信息-->
+    <header>
+        <!--画布需要优化大小与其他-->
+        <canvas></canvas>
+        <h1>Mr wang 的个人博客</h1>
+        <div class="infoBar clearfix">
+                <ul class="clearfix">
+                    <li class="active"><a href="../index.html">首页</a></li>
+                    <li><a href="javascript:void(0)">Font-end</a>
+                        <ul class="front-end">
+                            <li><a href="./sort-index.html">HTML</a></li>
+                            <li><a href="./sort-index.html">CSS</a></li>
+                            <li><a href="./sort-index.html">Ajax</a></li>
+                            <li><a href="./sort-index.html">移动web</a></li>
+                            <li><a href="./sort-index.html">Angular</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0)">Back-end</a>
+                        <ul class="back-end">
+                            <li><a href="./sort-index.html">C++</a></li>
+                            <li><a href="./sort-index.html">Python</a></li>
+                            <li><a href="./sort-index.html">Linux</a></li>
+                            <li><a href="./sort-index.html">数据库</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./sort-index.html">生活Info</a></li>
+                    <li><a href="../aboutMe">About Me</a></li>
+                    <li class="message"><a href="javascript:void(0)">给我留言</a></li>
+                </ul>
+                <!--<div class="front-end">-->
+                    <!--<ul>-->
+                        <!--<li><a href="">HTML</a></li>-->
+                        <!--<li><a href="">CSS</a></li>-->
+                        <!--<li><a href="">Ajax</a></li>-->
+                        <!--<li><a href="">移动web</a></li>-->
+                        <!--<li><a href="">前端框架</a></li>-->
+                    <!--</ul>-->
+                <!--</div>-->
+            <!--<div class="back-end">-->
+                    <!--<ul>-->
+                        <!--<li><a href="">C++</a></li>-->
+                        <!--<li><a href="">Pythom</a></li>-->
+                        <!--<li><a href="">Linux</a></li>-->
+                        <!--<li><a href="">数据库</a></li>-->
+                    <!--</ul>-->
+                <!--</div>-->
+            <div class="search"><a href="./search-index.html"><i class=" iconfont icon-weibiaoti4 m_r5"></i>搜索</a></div>
+        </div>
+    </header>
+    <!--中部具体信息-->
+    <div class="middle clearfix">
+        <!--留言板-->
+        <div class="leaveMessage" style="">
+            <textarea name="" id="" cols="30" rows="10" placeholder="感谢您的留言"></textarea>
+            <input type="button" value="留言"/>
+            <input class="username" type="text" placeholder="大侠，等一下，签个名"/>
+            <span class="leaveName hide">大侠，留个名哈</span>
+            <span class=" thankWord hide">留言成功，感谢您的留言</span>
+            <div class="line" style="margin-top: 20%">
+                <p><span class="commentNum">30</span><span>条评论</span></p>
+            </div>
+            <div class="pastMessage" id="pastMssage">
+                <script type="text/template" id="messageBox">
+                <% for(var i=0;i < items.length ;i++){%>
+                <div class="clearfix">
+                    <div>
+                        <img src="<%=items[i].imgsrc%>" alt=""/>
+                    </div>
+                    <p>
+                        <span class="username"><%=items[i].name%></span>
+                        <span class="message"><%=items[i].message%></span>
+                        <span class="date"><%=items[i].date%></span>
+                    </p>
+                </div>
+                <%}%>
+</script>
+                <!--<div class="clearfix">-->
+                    <!--<div>-->
+                        <!--<img src="../images/users/03.jpg" alt="" style=""/>-->
+                    <!--</div>-->
+                    <!--<p>-->
+                        <!--<span class="username">老王</span>-->
+                        <!--<span class="message">加油，加油啊</span>-->
+                        <!--<span class="date">2017年2月23日</span>-->
+                    <!--</p>-->
+                <!--</div>-->
+            </div>
+            <div class="pagesLink"></div>
+
+        </div>
+        <!--分类信息-->
+        <div class="categories">
+            <div class="bookcase">
+                <h2><i class=" iconfont icon-weibiaoti212 m_r5"></i>老王的书柜</h2>
+                <ul>
+                    <li><a href="">HTML(5)</a><a href="">CSS(6)</a></li>
+                    <li><a href="">Javascript(2)</a><a href="">Ajax(2)</a></li>
+                    <li><a href="">移动web(3)</a><a href="">前端框架(8)</a></li>
+                    <li><a href="">Linux(3)</a><a href="">C(10)</a></li>
+                    <li><a href="">C++(5)</a><a href="">Python(20)</a></li>
+                    <li><a href="">数据库(10)</a><a href="">硬件与智能(4)</a></li>
+                </ul>
+            </div>
+            <div class="past">
+                <h2><i class=" iconfont icon-weibiaoti5 m_r5"></i>越醇越香</h2>
+                <ul>
+                    <li><a href=""><i class=" iconfont icon-biaotizhongdian m_r5"></i>January 2016</a><a href=""><i class=" iconfont icon-biaotizhongdian m_r5"></i>February 2016</a></li>
+                    <li><a href=""><i class=" iconfont icon-biaotizhongdian m_r5"></i>March 2016</a><a href=""><i class=" iconfont icon-biaotizhongdian m_r5"></i>April 2016</a></li>
+                    <li><a href=""><i class=" iconfont icon-biaotizhongdian m_r5"></i>May 2016</a><a href=""><i class=" iconfont icon-biaotizhongdian m_r5"></i>June 2016</a></li>
+                    <li><a href=""><i class=" iconfont icon-biaotizhongdian m_r5"></i>July 2016</a><a href=""><i class=" iconfont icon-biaotizhongdian m_r5"></i>August 2016</a></li>
+                    <li><a href=""><i class=" iconfont icon-biaotizhongdian m_r5"></i>September 2016</a><a href=""><i class=" iconfont icon-biaotizhongdian m_r5"></i>October 2016</a></li>
+                    <li><a href=""><i class=" iconfont icon-biaotizhongdian m_r5"></i>November 2016</a><a href=""><i class=" iconfont icon-biaotizhongdian m_r5"></i>December 2016</a></li>
+                </ul>
+            </div>
+            <!--随机小知识-->
+            <div class="randomInfo">
+                <p><a href="javascript:void(0)"><span>变一下</span><i class=" iconfont icon-shuaxin m_l5"></i></a></p>
+                <a href="javascript:void(0)">
+                    <span class="hidden">简介盒子模型</span>
+                    <span class="show">CSS中link和@import的区别</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <p><span>Mr wang 版权所有</span><span>构建 © 2016</span></p>
+    </div>
+</div>
+<script src="../js/lib/require.js" data-main="../js/index/message-main"></script>
+</body>
+</html>

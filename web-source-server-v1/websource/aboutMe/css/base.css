@@ -1,0 +1,77 @@
+/*公共css样式*/
+body{
+    font-family: "Microsoft YaHei",sans-serif;
+    /*font-family: "Droid Serif", Georgia, serif;*/
+    font-size: 14px;
+    /*color: #710200;*/
+    color: #fff;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+li{
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    /*color: #710200;*/
+}
+a:hover,a:visited,a:link{
+    text-decoration: none;
+    /*color: #710200;*/
+    color: #fff;
+
+}
+
+input,input:active,input:visited,input:link{
+    border: none;
+    outline: none;
+    background-color: #fff;
+}
+textarea:active,textarea,textarea:visited{
+    border:none;
+    outline: none;
+}
+.clearfix::after,.clearfix::before{
+    display: block;
+    content: '';
+    height: 0;
+    width: 0;
+    visibility: hidden;
+    clear: both;
+}
+.m_l10{
+    margin-left: 10px;
+}
+.m_r5{
+    margin-right: 5px;
+}
+.m_l5{
+    margin-left: 5px;
+}
+.m_r10{
+    margin-right: 10px;
+}
+.hide{
+    display: none;
+}
+
+/*@font-face {font-family: 'iconfont';*/
+    /*src: url('../font/iconfont.eot');*/
+    /*src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'),*/
+    /*url('../font/iconfont.woff') format('woff'),*/
+    /*url('../font/iconfont.ttf') format('truetype'),*/
+    /*url('../font/iconfont.svg#iconfontyyy') format('svg');*/
+/*}*/
+
+/*.icon-aixin, .icon-less, .icon-moreunfold, .icon-bofang1, .icon-weibiaoti4, .icon-weibiaoti5,.icon-biaotizhongdian, .icon-weibiaoti212, .icon-changyonglianjie{*/
+    /*font-family: iconfont;*/
+    /*font-size: 20px;*/
+    /*color: #000;*/
+/*}*/

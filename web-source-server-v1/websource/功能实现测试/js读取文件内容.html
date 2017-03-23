@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../js/lib/jquery.min.js"></script>
+</head>
+<body>
+<div id="aa"></div>
+<script>
+    if (window.File && window.FileReader && window.FileList && window.Blob) {
+        // Great success! All the File APIs are supported.
+    } else {
+        alert('The File APIs are not fully supported in this browser.');
+    }
+    $(function(){
+        $('#aa').load('testfile.text');
+    });
+</script>
+</body>
+</html>
