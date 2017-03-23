@@ -1,0 +1,25 @@
+[
+  [
+    {"type":"tableName"},
+    {"title":"articledetail"},
+    {"article":"article"},
+    {"sortArticle":"articledetail"},
+    {"sortArticle":"articledetail"},
+    {"art_context":"art_context"},
+    {"nav":"article"},
+    {"everyArticle":"articledetail"},
+    {"clicknav":"clicknav"},
+    {"clickTitle":"clicknav"},
+    {"leavemessage":"leavemessage"},
+    {"pastmessage":"leavemessage"},
+    {"pastmessageLength":"leavemessage"},
+    {"search":"articleDetail"},
+    {"search":"articleDetail"}
+  ],
+  [
+    {"type":"sql"},
+    {"title":"select id,title from articledetail limit 0,6;"},
+    {"article":"select id, type,imgSrc,title,abstract ,author ,date,number from article"},
+    {"sortArticle":"select id, type,imgSrc,title,abstract ,author ,date,number from article"}
+  ]
+]

@@ -1,0 +1,153 @@
+
+.hidden {
+	visibility: hidden;
+	/*display: none;*/
+	/*position: absolute;*/
+	/*overflow: hidden;*/
+	/*width: 0;*/
+	/*height: 0;*/
+	/*pointer-events: none;*/
+}
+
+
+/* Content */
+.content {
+	position: relative;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	/*min-height: 500px;*/
+	/*padding: 7em 0;*/
+}
+
+.js .content {
+	overflow: hidden;
+}
+
+.content--c1 {
+	color: #5141d6;
+	background: #e8e8f1;
+}
+
+.content--c1 .btn--trigger,
+.content--c1 .section-link {
+	color: #333;
+}
+
+.content--c2 {
+	color: #fffee8;
+	/*background: #757d8b url(../img/3.jpg) no-repeat 50% 50%;*/
+	background-size: cover;
+}
+
+.content--c2 .section-link {
+	color: #fffdf4;
+}
+
+
+/* Text styles */
+.title {
+	margin: 0;
+	font-size: 18px;
+	position: relative;
+}
+
+.title--centered {
+	text-align: center;
+}
+
+.js .title--centered {
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+.title--right {
+	width: 100%;
+	text-align: right;
+}
+
+.js .title--right {
+	-webkit-justify-content: flex-end;
+	-ms-flex-pack: flex-end;
+	justify-content: flex-end;
+}
+
+.title--style-1 {
+	font-family: 'Abril Fatface', serif;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: -0.25vw;
+}
+
+.title--style-2 {
+	font-family: 'Teko', sans-serif;
+	font-weight: 600;
+}
+
+
+[class*="letter"] {
+	display: block;
+	position: relative;
+	-webkit-flex: none;
+	-ms-flex: none;
+	flex: none;
+	white-space: pre;
+}
+
+.title--style-9 [class*="letter"] {
+	-webkit-transform-origin: 0% 50%;
+	transform-origin: 0% 50%;
+}
+
+.title--style-10 [class*="letter"] {
+	-webkit-transform-origin: -200% 50%;
+	transform-origin: -200% 50%;
+}
+
+/* Slideshow */
+.slideshow{
+	position: relative;
+}
+.slide {
+	position: absolute;
+	/*width: 800px;*/
+	/*height: 100%;*/
+}
+.slide>h2{
+	padding:10px;
+	/*background-color:red;*/
+}
+.slide>h2>span{
+	float: left;
+	margin-right: 5px;
+}
+.slide {
+	/*padding: 0 6vw;*/
+}
+
+.slide {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+.slide:not(.slide--current) {
+	position: absolute;
+	top: 0;
+	pointer-events: none;
+	opacity: 0;
+}
