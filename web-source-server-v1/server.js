@@ -58,7 +58,7 @@ function  getPostData(str){
     }
     return obj;
 }
-/*结束mysql的连接*/
+/*关闭mysql的连接*/
 //connection.endConnectMysql();
 
 
