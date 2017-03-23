@@ -1,0 +1,59 @@
+[
+{"type":"JS",
+"title":"px和em的区别?",
+"imgSrc":"./images/article_3.jpg",
+"abstract":"px和em都是长度单位，区别是，px的值是固定的，指定是多少就是多少，计算比较容易em的值不是固定的，并且em会继承父级元素的字体大小。浏览器的默认字体高都是16px。 所以未经调整的浏览器都符合: 1em=16px。 那么12px=0.75em,10px=0.625em",
+"author":"Mr Wang",
+"date":"一周前",
+"number":"20"
+},
+  {"type":"CSS",
+    "title":"BFC是什么?",
+    "imgSrc":"./images/article_2.jpg",
+    "abstract":"BFC（块级格式化上下文），一个创建了新的BFC的盒子是独立布局的，盒子内元素的布局不会影响盒子外面的元素。在同一个BFC中的两个相邻的盒子在垂直方向发生 margin 重叠的问题",
+    "author":"Mr Wang",
+    "date":"一周前",
+    "number":"20"
+  },
+  {"type":"JS",
+    "title":"JavaScript this 闭包 作用域",
+    "imgSrc":"./images/article_10.jpg",
+    "abstract":"this：指向调用上下文闭包：内层作用域可以访问外层作用域的变量，作用域：定义一个函数就开辟了一个局部作用域，整个 js 执行环境有一个全局作用域",
+    "author":"Mr Wang",
+    "date":"一周前",
+    "number":"20"
+  },
+  {"type":"JS",
+    "title":"javascript的同源策略",
+    "imgSrc":"./images/article_5.jpg",
+    "abstract":"一段脚本只能读取来自于同一来源的窗口和文档的属性， 这里的同一来源指的是主机名、 协议和端口号的组合http,ftp:协议主机名；localhost,端口名：80:http ,协议的默认端口https:默认端口是 8083",
+    "author":"Mr Wang",
+    "date":"一周前",
+    "number":"20"
+  },
+  {"type":"JS",
+    "title":"在Javascript中什么是伪数组，如何将伪数组转化为标准数组？",
+    "imgSrc":"./images/article_6.jpg",
+    "abstract":"伪数组（类数组） ：无法直接调用数组方法或期望 length 属性有什么特殊的行为，但仍可以对真正数组遍历方法来遍历它们。典型的是函数的 argument 参数，还有像调用getElementsByTagName,document.childNodes 之类的,它们都返回 NodeList 对象都属于伪数组。可以使用 Array.prototype.slice.call(fakeArray)将数组转化为真正的 Array 对象。",
+    "author":"Mr Wang",
+    "date":"一周前",
+    "number":"20"
+  },
+  {"type":"AJAX",
+    "title":"同步和异步的区别?",
+    "imgSrc":"./images/article_1.jpg",
+    "abstract":"同步：阻塞的，比如：-张三叫李四去吃饭，李四一直忙得不停，张三一直等着，直到李四忙完两个人一块去吃饭=浏览器向服务器请求数据，服务器比较忙，浏览器一直等着（页面白屏） ，直到服务器返回数据，浏览器才能显示页面...",
+    "author":"Mr Wang",
+    "date":"一周前",
+    "number":"20"
+  },
+  {"type":"AJAX",
+    "title":"如何解决跨域问题?",
+    "imgSrc":"./images/article_8.jpg",
+    "abstract":"理解跨域的概念：协议、域名、端口都相同才同域，否则都是跨域出于安全考虑，服务器不允许 ajax 跨域获取数据，但是可以跨域获取文件内容，所以基于这一点，可以动态创建 script 标签，使用标签的 src 属性访问 js 文件的形式获取 js脚本，并且这个 js 脚本中的内容是 函数调用，该函数调用的参数是服务器返回的数据...",
+    "author":"Mr Wang",
+    "date":"一周前",
+    "number":"20"
+  }
+
+]
