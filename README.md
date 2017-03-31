@@ -10,5 +10,6 @@ web-source-server使用：
       node server.js
 ```
 +    3、在浏览器输入127.0.0.1:90即可访问tobone网站
-+    4、目前版本仅为测试nodejs服务器
-
++    4、目前版本仅为测试nodejs服务器
++    5、项目预览图：
+![image](index.jpg) 
